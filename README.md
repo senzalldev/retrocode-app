@@ -20,6 +20,24 @@
 
 ---
 
+## Screenshots
+
+![Welcome](screenshots/welcome.png)
+
+![Assembly Mode](screenshots/asm-mode.png)
+
+![ASM Running](screenshots/asm-running.png)
+
+![ASM Graphics](screenshots/asm-graphics.png)
+
+![BASIC Terminal](screenshots/basic-terminal.png)
+
+![BASIC Graphics](screenshots/basic-graphics.png)
+
+![BASIC Lessons](screenshots/basic-lessons.png)
+
+---
+
 ## What's Inside
 
 ### Assembly Mode
