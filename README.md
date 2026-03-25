@@ -54,7 +54,8 @@ Program in BASIC V2.0, the language that came built into every home computer of 
 - 40+ commands — PRINT, INPUT, IF/THEN, FOR/NEXT, GOSUB, arrays, DATA/READ
 - Math & string functions — SIN, COS, LEN, LEFT$, MID$, CHR$
 - 64x48 bitmap graphics — PLOT, DRAW, CIRCLE, BOX, FILL
-- 31 sample programs
+- Colon multi-statement support — `PRINT "A": PRINT "B"`
+- 33 sample programs including Hangman and Reaction Timer
 
 ### Learn Tab
 - **26 Assembly lessons** — from "What is a CPU?" to drawing graphics
@@ -94,7 +95,8 @@ HLT         ; Stop
 ## Features
 
 - **Split-pane IDE** with code editor + CPU state / terminal / graphics
-- **4 themes** — Retro, Dark, Light, RPG
+- **5 themes** — Default (green), Standard, Dark, Light, RPG
+- **Settings** — theme picker, CPU speed slider, zoom
 - **File I/O** — save/load .asm, .bas, .hex files
 - **UI zoom** — 75% to 150%
 - **Keyboard shortcuts** — Cmd+R, Cmd+S, F10
