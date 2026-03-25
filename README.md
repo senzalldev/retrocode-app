@@ -12,11 +12,11 @@
 
 | Platform | Download | Requirements |
 |----------|----------|-------------|
-| **macOS (Apple Silicon)** | [RetroCode_1.0.0_aarch64.dmg](https://github.com/senzalldev/retrocode/releases/latest/download/RetroCode_1.0.0_aarch64.dmg) | macOS 12+ (signed & notarized) |
-| **macOS (Intel)** | [RetroCode-macOS-x64.zip](https://github.com/senzalldev/retrocode/releases/latest/download/RetroCode-macOS-x64.zip) | macOS 12+ |
-| **Windows** | [RetroCode-Windows-x64.zip](https://github.com/senzalldev/retrocode/releases/latest/download/RetroCode-Windows-x64.zip) | Windows 10+ |
+| **macOS (Apple Silicon)** | [RetroCode_1.0.0_aarch64.dmg](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode_1.0.0_aarch64.dmg) | macOS 12+ (signed & notarized) |
+| **macOS (Intel)** | [RetroCode-macOS-x64.zip](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode-macOS-x64.zip) | macOS 12+ |
+| **Windows** | [RetroCode-Windows-x64.zip](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode-Windows-x64.zip) | Windows 10+ |
 
-[All releases](https://github.com/senzalldev/retrocode/releases) | [Website](https://senzall.com/retrocode)
+[All releases](https://github.com/senzalldev/retrocode-app/releases) | [Website](https://senzall.com/retrocode)
 
 ---
 
@@ -120,6 +120,6 @@ In 7th grade, Senzall's dad surprised him with a TRS-80 Color Computer — power
 
 ---
 
-**[senzall.com/retrocode](https://senzall.com/retrocode)** | **[Download](https://github.com/senzalldev/retrocode/releases/latest)** | **[Report Issue](https://github.com/senzalldev/retrocode-app/issues)**
+**[senzall.com/retrocode](https://senzall.com/retrocode)** | **[Download](https://github.com/senzalldev/retrocode-app/releases/latest)** | **[Report Issue](https://github.com/senzalldev/retrocode-app/issues)**
 
 Copyright 2026 Senzall. All rights reserved. Free to download and use.
