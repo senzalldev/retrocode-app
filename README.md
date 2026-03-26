@@ -130,22 +130,27 @@ HLT         ; Stop
 
 RetroCode includes a built-in MCP (Model Context Protocol) server that lets Claude interact with the IDE directly.
 
-**Setup (Claude Code CLI):**
-```bash
-claude mcp add retrocode node ~/Documents/GitHub/retrocode/mcp-server.js
-```
+**Setup (2 steps):**
+1. In RetroCode: **Code → MCP tab → "Save mcp-server.js to Home Folder"**
+2. In your terminal: `claude mcp add retrocode node ~/mcp-server.js`
 
-**What Claude can do:**
-- Read the current editor content, mode, and language
-- Write code directly to the editor
-- Append code to the editor
-- Check if RetroCode is running
+**8 MCP tools:**
+- `retrocode_get_editor` — read content, mode, language, file path
+- `retrocode_set_editor` — write code with language (auto-switches highlighting)
+- `retrocode_append_editor` — add code to editor
+- `retrocode_read_file` — read a file from disk
+- `retrocode_save_file` — save editor to disk
+- `retrocode_list_languages` — list all 23 supported languages
+- `retrocode_get_mode` — check current mode
+- `retrocode_health` — verify connection
 
 **API endpoints** (port 21580):
 - `GET /api/health` — check status
-- `GET /api/editor` — read editor
-- `PUT /api/editor` — write to editor
+- `GET /api/editor` — read editor state
+- `PUT /api/editor` — write to editor (with language)
 - `POST /api/editor/append` — append to editor
+- `GET /api/readfile?path=...` — read file from disk
+- `POST /api/savefile` — save content to file
 
 The MCP server runs on **port 21580** whenever RetroCode is open.
 
