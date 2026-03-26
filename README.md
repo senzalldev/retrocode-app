@@ -20,6 +20,9 @@
 [All releases](https://github.com/senzalldev/retrocode-app/releases) | [Website](https://senzall.com/retrocode)
 <!-- build-info --> _v1.0.0.2 · Built 2026-03-26_
 
+> **Testing builds:** Want to try the latest features before they're stable?
+> [Download the testing release](https://github.com/senzalldev/retrocode-app/releases/tag/v1.0.0-testing) (may have bugs)
+
 ---
 
 ## Screenshots
