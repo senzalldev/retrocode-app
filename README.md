@@ -18,7 +18,7 @@
 | **Linux** | [RetroCode-Linux-x64.zip](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode-Linux-x64.zip) | Ubuntu 22.04+ |
 
 [All releases](https://github.com/senzalldev/retrocode-app/releases) | [Website](https://senzall.com/retrocode)
-<!-- build-info --> _v1.0.0.2 · Built 2026-03-26_
+<!-- build-info --> _v1.0.0.3 · Build 20260326.1701_
 
 > **Testing builds:** Want to try the latest features before they're stable?
 > [Download the testing release](https://github.com/senzalldev/retrocode-app/releases/tag/v1.0.0-testing) (may have bugs)
