@@ -4,7 +4,7 @@
 
 <h1 align="center">Senzall's RetroCode</h1>
 <p align="center"><strong>Assembly & BASIC from 1980!</strong></p>
-<p align="center">A free desktop IDE for learning 8-bit assembly language and BASIC programming.<br>Inspired by the Radio Shack Science Fair Microcomputer Trainer.</p>
+<p align="center">A free desktop IDE for learning 8-bit assembly language, BASIC programming, and modern code editing.<br>Three modes — Assembly, BASIC, and Code (ABC) — inspired by the Radio Shack Science Fair Microcomputer Trainer.</p>
 
 ---
 
@@ -57,13 +57,21 @@ Program in BASIC V2.0, the language that came built into every home computer of 
 - Colon multi-statement support — `PRINT "A": PRINT "B"`
 - 33 sample programs including Hangman and Reaction Timer
 
-### Text Editor Mode
-A general-purpose code editor with syntax highlighting for 12 languages.
+### Code Mode
+A full-featured code editor with syntax highlighting for **23 programming languages**.
 
-- **C, C++, C#, JavaScript, TypeScript, Python, Rust, Go, YAML, HTML, JSON, SQL, Markdown**
-- Syntax highlighting, auto-complete, line numbers
+- **C, C++, C#, Java, JavaScript, TypeScript, Python, Ruby, Rust, Go, Swift, Kotlin, PHP, Perl, Lua, R, Shell/Bash, YAML, HTML, CSS, JSON, SQL, Markdown**
+- Line numbers, find/replace, autocomplete, bracket matching, go-to-line, comment toggle, word wrap
+- File browser with directory tree navigation
 - Sample code for each language
 - Auto-detects language from file extension
+
+### Embedded Terminal
+A built-in terminal (xterm.js) with shell selection, available as a global option in all three modes.
+
+- Choose your shell (zsh, bash, etc.)
+- Full terminal emulation
+- Toggle from any mode
 
 ### Learn Tab
 - **26 Assembly lessons** — from "What is a CPU?" to drawing graphics
@@ -102,13 +110,47 @@ HLT         ; Stop
 
 ## Features
 
+- **3 modes** — Assembly, BASIC, and Code (ABC)
+- **23 programming languages** with syntax highlighting
 - **Split-pane IDE** with code editor + CPU state / terminal / graphics
-- **5 themes** — Default (green), Standard, Dark, Light, RPG
+- **Embedded terminal** (xterm.js) with shell selection — global option in all modes
+- **File browser** — directory tree navigation
+- **6 themes** — Default (green), Standard, Dark, Light, RPG, High Contrast
+- **Editor features** — line numbers, find/replace, autocomplete, bracket matching, go-to-line, comment toggle, word wrap
+- **MCP API** for Claude integration (port 21580)
 - **Settings** — theme picker, CPU speed slider, zoom
 - **File I/O** — save/load .asm, .bas, .hex files
 - **UI zoom** — 75% to 150%
 - **Keyboard shortcuts** — Cmd+R, Cmd+S, F10
-- **133 unit tests**
+- **210 unit tests**
+
+---
+
+## Claude Integration (MCP)
+
+RetroCode includes a built-in MCP (Model Context Protocol) server that lets Claude interact with the IDE directly.
+
+**Setup:** Add RetroCode to your Claude Desktop config (`claude_desktop_config.json`):
+
+```json
+{
+  "mcpServers": {
+    "retrocode": {
+      "command": "curl",
+      "args": ["-s", "http://localhost:21580/mcp"]
+    }
+  }
+}
+```
+
+**What Claude can do:**
+- Read and write assembly or BASIC code in the editor
+- Run programs and read output
+- Query CPU state (registers, flags, memory)
+- Control execution (step, run, reset)
+- Switch between modes
+
+The MCP server runs on **port 21580** when RetroCode is open.
 
 ---
 
