@@ -57,6 +57,14 @@ Program in BASIC V2.0, the language that came built into every home computer of 
 - Colon multi-statement support — `PRINT "A": PRINT "B"`
 - 33 sample programs including Hangman and Reaction Timer
 
+### Text Editor Mode
+A general-purpose code editor with syntax highlighting for 12 languages.
+
+- **C, C++, C#, JavaScript, TypeScript, Python, Rust, Go, YAML, HTML, JSON, SQL, Markdown**
+- Syntax highlighting, auto-complete, line numbers
+- Sample code for each language
+- Auto-detects language from file extension
+
 ### Learn Tab
 - **26 Assembly lessons** — from "What is a CPU?" to drawing graphics
 - **25 BASIC lessons** — from "Hello World" to building complete programs
