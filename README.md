@@ -15,6 +15,7 @@
 | **macOS (Apple Silicon)** | [RetroCode_1.0.0_aarch64.dmg](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode_1.0.0_aarch64.dmg) | macOS 12+ (signed & notarized) |
 | **macOS (Intel)** | [RetroCode-macOS-x64.zip](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode-macOS-x64.zip) | macOS 12+ |
 | **Windows** | [RetroCode-Windows-x64.zip](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode-Windows-x64.zip) | Windows 10+ |
+| **Linux** | [RetroCode-Linux-x64.zip](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode-Linux-x64.zip) | Ubuntu 22.04+ |
 
 [All releases](https://github.com/senzalldev/retrocode-app/releases) | [Website](https://senzall.com/retrocode)
 
