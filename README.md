@@ -160,13 +160,18 @@ The MCP server runs on **port 21580** whenever RetroCode is open.
 
 ## Documentation
 
-- [Full documentation (Wiki)](https://github.com/senzalldev/retrocode-app/wiki)
-- [Getting Started](https://github.com/senzalldev/retrocode-app/wiki/Getting-Started)
-- [Assembly Reference](https://github.com/senzalldev/retrocode-app/wiki/Assembly-Reference)
-- [BASIC Reference](https://github.com/senzalldev/retrocode-app/wiki/BASIC-Reference)
-- [Graphics Guide](https://github.com/senzalldev/retrocode-app/wiki/Graphics-Guide)
-- [Keyboard Shortcuts](https://github.com/senzalldev/retrocode-app/wiki/Keyboard-Shortcuts)
-- [FAQ](https://github.com/senzalldev/retrocode-app/wiki/FAQ)
+| Topic | Link |
+|-------|------|
+| Getting Started | [Wiki: Getting Started](https://github.com/senzalldev/retrocode-app/wiki/Getting-Started) |
+| Assembly Reference (36 opcodes) | [Wiki: Assembly Reference](https://github.com/senzalldev/retrocode-app/wiki/Assembly-Reference) |
+| BASIC Reference (40+ commands) | [Wiki: BASIC Reference](https://github.com/senzalldev/retrocode-app/wiki/BASIC-Reference) |
+| Code Editor (23 languages) | [Wiki: Code Editor](https://github.com/senzalldev/retrocode-app/wiki/Code-Editor) |
+| MCP Integration (Claude AI) | [Wiki: MCP Integration](https://github.com/senzalldev/retrocode-app/wiki/MCP-Integration) |
+| Graphics Guide (64x48 bitmap) | [Wiki: Graphics Guide](https://github.com/senzalldev/retrocode-app/wiki/Graphics-Guide) |
+| Assembly Lessons (26) | [Wiki: Assembly Lessons](https://github.com/senzalldev/retrocode-app/wiki/Assembly-Lessons) |
+| BASIC Lessons (25) | [Wiki: BASIC Lessons](https://github.com/senzalldev/retrocode-app/wiki/BASIC-Lessons) |
+| Keyboard Shortcuts | [Wiki: Keyboard Shortcuts](https://github.com/senzalldev/retrocode-app/wiki/Keyboard-Shortcuts) |
+| FAQ | [Wiki: FAQ](https://github.com/senzalldev/retrocode-app/wiki/FAQ) |
 
 ---
 
