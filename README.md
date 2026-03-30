@@ -3,8 +3,8 @@
 </p>
 
 <h1 align="center">Senzall's RetroCode</h1>
-<p align="center"><strong>Assembly & BASIC from 1980!</strong></p>
-<p align="center">A free desktop IDE for learning 8-bit assembly language, BASIC programming, and modern code editing.<br>Three modes — Assembly, BASIC, and Code (ABC) — inspired by the Radio Shack Science Fair Microcomputer Trainer.</p>
+<p align="center"><strong>1980s Computing Meets Modern AI</strong></p>
+<p align="center">Write 8-bit assembly. Program in BASIC. Code in 25 languages. And let Claude AI help you along the way.<br>Three modes — Assembly, BASIC, and Code — inspired by the TRS-80, Apple II, and Commodore 64.</p>
 
 ---
 
