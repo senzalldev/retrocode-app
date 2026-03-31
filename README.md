@@ -20,26 +20,36 @@
 
 ---
 
-## Claude AI Integration (MCP)
+## Claude AI Integration
 
-RetroCode includes built-in AI integration. Connect Claude to your editor — Claude can write code, run scripts, and chat with you in real time.
+Chat with Claude directly inside RetroCode. Claude can write code, save files, run scripts, and manage tabs — all through the chat panel.
 
-### Quick Setup (30 seconds)
-1. **In RetroCode:** Code → MCP tab → click **"Install MCP + /retrocode Command"**
-2. **In your terminal:** `claude mcp add retrocode node ~/mcp-server.js`
-3. **Start chatting:** `/retrocode` (or `/retrocode 3` for faster responses)
+### Setup (one time)
+1. **In RetroCode:** Code → MCP tab → click **"Install MCP + /retrocode Command"** (saves 3 files, copies command to clipboard)
+2. **In your terminal:** Paste the command (already copied): `claude mcp add retrocode node ~/mcp-server.js`
+3. **Start a session:** Type `/retrocode` in Claude Code (or `/retrocode 3` for faster polling)
+4. **Tip:** Type `/fast` first for faster responses and lower token usage
+
+### How It Works
+
+The install button saves three files:
+- **~/mcp-server.js** — 23 MCP tools Claude uses to control RetroCode
+- **~/retrocode-poll.js** — Chat proxy that bridges messages to Claude
+- **~/.claude/commands/retrocode.md** — The /retrocode slash command
+
+When you type in the RetroCode chat panel, the proxy script detects your message and passes it to Claude. Claude responds via MCP tools. Heartbeats and connection status are handled automatically — Claude is only invoked when you send a message, keeping token usage low.
 
 ### 23 MCP Tools
 | Category | Tools |
 |----------|-------|
-| Editor | get_editor, set_editor, append_editor |
-| Files | save_file, read_file |
-| Tabs | list_tabs, switch_tab, new_tab |
-| Terminal | open_terminal, close_terminal, terminal, terminal_output |
-| Chat | chat, get_chat, heartbeat |
-| Control | run, stop, switch_mode, get_mode |
-| Reference | asm_reference, basic_reference |
-| System | health, list_languages |
+| Editor | get, set, append |
+| Files | save, read |
+| Tabs | list, switch, new |
+| Terminal | open, close, command, output |
+| Chat | send, read, heartbeat |
+| Control | run, stop, switch mode, get mode |
+| Reference | ASM reference, BASIC reference |
+| System | health, languages |
 
 ---
 
