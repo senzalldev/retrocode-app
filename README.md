@@ -16,7 +16,7 @@
 | **Windows** | [RetroCode-Windows-x64.zip](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode-Windows-x64.zip) | Windows 11+ |
 
 [All releases](https://github.com/senzalldev/retrocode-app/releases) | [Website](https://senzall.com/retrocode)
-<!-- build-info --> _v1.2.0.5 · Build 20260331.0121_
+<!-- build-info --> _v1.2.0.6 · Build 20260331.0300_
 
 ---
 
