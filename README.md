@@ -12,8 +12,8 @@
 
 | Platform | Download | Requirements |
 |----------|----------|-------------|
-| **macOS (Apple Silicon)** | [RetroCode-macOS-arm64.dmg](https://github.com/senzalldev/retrocode-app?tab=readme-ov-file) | macOS 12+ (signed & notarized) |
-| **Windows** | [RetroCode-Windows-x64.zip](https://github.com/senzalldev/retrocode-app?tab=readme-ov-file) | Windows 11+ |
+| **macOS (Apple Silicon)** | [RetroCode-macOS-arm64.dmg](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode-macOS-arm64.dmg) | macOS 12+ (signed & notarized) |
+| **Windows** | [RetroCode-Windows-x64.zip](https://github.com/senzalldev/retrocode-app/releases/latest/download/RetroCode-Windows-x64.zip) | Windows 11+ |
 
 [All releases](https://github.com/senzalldev/retrocode-app/releases) | [Website](https://senzall.com/retrocode)
 <!-- build-info --> _v1.2.0.6 · Build 20260331.0300_
