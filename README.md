@@ -4,7 +4,7 @@
 
 <h1 align="center">Senzall's RetroCode</h1>
 <p align="center"><strong>1980s Computing Meets Modern AI</strong></p>
-<p align="center">Write 8-bit assembly. Program in BASIC. Code in 25 languages. And let Claude AI help you along the way.<br>Three modes — Assembly, BASIC, and Code — inspired by the TRS-80, Apple II, and Commodore 64.</p>
+<p align="center">Write 8-bit assembly. Program in BASIC. Code in 25 languages. Chat with Claude or GitHub Copilot.<br>Three modes — Assembly, BASIC, and Code — inspired by the TRS-80, Apple II, and Commodore 64.</p>
 
 ---
 
@@ -20,26 +20,46 @@
 
 ---
 
-## Claude AI Integration
+## AI Integration (Claude + GitHub Copilot)
 
-Chat with Claude directly inside RetroCode. Claude can write code, save files, run scripts, and manage tabs — all through the chat panel.
+Chat with AI directly inside RetroCode. Your AI assistant can write code, save files, run scripts, and manage tabs — all through the chat panel. Choose your provider in **Settings > AI Provider**.
 
-### Setup (one time)
-1. **In RetroCode:** Code → MCP tab → click **"Install MCP + /retrocode Command"** (saves 3 files, copies command to clipboard)
-2. **In your terminal:** Paste the command (already copied): `claude mcp add retrocode node ~/mcp-server.js`
-3. **Start a session:** Type `/retrocode` in Claude Code (or `/retrocode 3` for faster polling)
-4. **Tip:** Type `/fast` first for faster responses and lower token usage
+### Option A: Claude (via MCP)
+
+Uses your Claude Max/Pro subscription through Claude Code CLI.
+
+1. **In RetroCode:** Code → MCP tab → click **"Install MCP + /retrocode Command"**
+2. **In your terminal:** `claude mcp add retrocode node ~/mcp-server.js`
+3. **Start a session:** Type `/retrocode` in Claude Code
+4. **Tip:** Type `/fast` first for faster responses
+
+### Option B: GitHub Copilot (via SDK)
+
+Uses your GitHub Copilot subscription. Access GPT-4.1, Claude, Gemini, and more — pick the model in Settings.
+
+1. **Install:** `npm install -g @github/copilot @github/copilot-sdk`
+2. **Authenticate:** `copilot auth login`
+3. **Start:** `node ~/copilot-bridge.js` (or `node ~/copilot-bridge.js --model claude-sonnet-4`)
+4. **List models:** `node ~/copilot-bridge.js --list-models`
 
 ### How It Works
 
-The install button saves three files:
-- **~/mcp-server.js** — 23 MCP tools Claude uses to control RetroCode
-- **~/retrocode-poll.js** — Chat proxy that bridges messages to Claude
-- **~/.claude/commands/retrocode.md** — The /retrocode slash command
+**Claude** uses MCP (Model Context Protocol) — a JSON-RPC bridge that gives Claude 23 tools to control RetroCode. The poll script detects your messages and forwards them.
 
-When you type in the RetroCode chat panel, the proxy script detects your message and passes it to Claude. Claude responds via MCP tools. Heartbeats and connection status are handled automatically — Claude is only invoked when you send a message, keeping token usage low.
+**Copilot** uses the GitHub Copilot SDK — a bridge script polls the chat API, sends messages to the Copilot backend (with your chosen model), and posts responses back. Same 13 core tools (editor, files, terminal, references).
 
-### 23 MCP Tools
+Both providers keep token usage low — they only activate when you send a message.
+
+### Available Models (Copilot)
+
+| Model | Tier |
+|-------|------|
+| GPT-4.1, GPT-4o, GPT-4.1 Mini | Included |
+| Claude Sonnet 4/4.5, Gemini 3 Pro, o3-mini | 1x premium |
+| Claude Haiku 4.5, Gemini 3 Flash | 0.33x premium |
+| Claude Opus 4.5/4.6 | 3x premium |
+
+### 23 MCP Tools (Claude)
 | Category | Tools |
 |----------|-------|
 | Editor | get, set, append |
@@ -75,7 +95,7 @@ When you type in the RetroCode chat panel, the proxy script detects your message
 - **Collapsible sidebar** — toggle the right panel in any mode
 - **51 lessons** — 26 assembly + 25 BASIC
 - **50+ sample programs** — games, math plots, trig functions
-- **23 MCP tools** for Claude AI integration
+- **AI chat** — Claude (via MCP) or GitHub Copilot (via SDK) with 11 model choices
 - **6 themes** — Default, Standard, Dark, Light, RPG, High Contrast
 - **File browser** — directory tree navigation
 - **Embedded terminal** (xterm.js) — global option in all modes
