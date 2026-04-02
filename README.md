@@ -88,13 +88,14 @@ Both providers keep token usage low — they only activate when you send a messa
 - **3 modes** — Assembly, BASIC, and Code (ABC)
 - **8-Bit CPU Simulator** — 36 instructions, step-through debugging, labels
 - **BASIC V2.0** — 40+ commands, graphics, DATA/READ, PEEK/POKE, virtual file system
+- **INKEY$ game support** — Arrow keys, WASD, SPACE detection for real-time games (Snake, Breakout)
 - **64x48 Graphics Display** — PLOT, DRAW, CIRCLE, BOX, FILL
 - **Code Editor** — 25 languages with syntax highlighting
 - **Per-mode file tabs** — up to 5 tabs in each mode with session recovery
 - **Multiple terminals** — up to 4 concurrent sessions with tab switching
 - **Collapsible sidebar** — toggle the right panel in any mode
 - **51 lessons** — 26 assembly + 25 BASIC
-- **50+ sample programs** — games, math plots, trig functions
+- **50+ sample programs** — Snake, Breakout, math plots, trig functions
 - **AI chat** — Claude (via MCP) or GitHub Copilot (via SDK) with 11 model choices
 - **6 themes** — Default, Standard, Dark, Light, RPG, High Contrast
 - **File browser** — directory tree navigation
