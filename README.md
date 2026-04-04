@@ -38,7 +38,7 @@ Uses your Claude Max/Pro subscription through Claude Code CLI.
 Uses your GitHub Copilot subscription. Access GPT-4.1, Claude, Gemini, and more — pick the model in Settings.
 
 1. **Install:** `npm install -g @github/copilot @github/copilot-sdk`
-2. **Authenticate:** `copilot auth login`
+2. **Authenticate:** `copilot -i "auth login"`
 3. **Start:** `node ~/copilot-bridge.js` (or `node ~/copilot-bridge.js --model claude-sonnet-4`)
 4. **List models:** `node ~/copilot-bridge.js --list-models`
 
