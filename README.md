@@ -112,3 +112,13 @@ Both providers keep token usage low — they only activate when you send a messa
 ---
 
 Copyright 2026 [Senzall](https://senzall.com). All rights reserved.
+
+### Option C: MorselHub (multi-source hub)
+
+Routes messages through MorselHub alongside iMessage and webhooks. Download [MorselHub](https://morselhub.com).
+
+1. **In RetroCode:** Settings > AI Provider > select **MorselHub**
+2. **Register both:** `claude mcp add retrocode node ~/mcp-server.js` and `claude mcp add morselhub node ~/morselhub-mcp-server.mjs`
+3. **Start:** `claude --allowedTools "mcp__morselhub__*,mcp__retrocode__*" --dangerously-load-development-channels server:morselhub`
+
+Claude gets MorselHub channel push + all 23 RetroCode tools.
